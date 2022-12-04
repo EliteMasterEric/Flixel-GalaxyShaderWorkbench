@@ -4,7 +4,7 @@
       "name": "flixel",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "bugfix/glsl-300-shader",
       "url": "https://github.com/MasterEric/flixel"
     },
     {
