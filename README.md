@@ -10,7 +10,7 @@ Galaxy shader via [ShaderToy](https://www.shadertoy.com/view/lty3Rt).
 
 ## Compatibility test results
 
-GLSL Version | Windows (NVIDIA)¹ | Linux² | Firefox³ | Chrome⁴ | Android⁵ | MacOS | Windows (AMD)
+GLSL Version | Windows (NVIDIA)¹ | Linux² | Firefox³ | Chrome⁴ | Android⁵ | MacOS⁶  | Windows (AMD)⁷
 ---|---|---|---|---|---|---|---
 100† | ✅ | ✅ | ✅ | ✅ | ✅ | ? | ?
 110 | ✅ | ✅ | ❌ | ❌ | ❌ | ? | ?
@@ -40,6 +40,8 @@ GLSL Version | Windows (NVIDIA)¹ | Linux² | Firefox³ | Chrome⁴ | Android⁵
 ³ Firefox v107.0.1 `OpenGL Vendor=Mozilla Version=WebGL 2.0 Renderer=ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0) GLSL=WebGL GLSL ES3.00`  
 ⁴ Chrome v107.0.5304.123 `OpenGL Vendor=WebKit Version=WebGL 2.0 (OpenGL ES 3.0 Chromium) Renderer = WebKit WebGL GLSL=WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)`  
 ⁵ Android 11 (Pixel 4a) via Android Studio emulator `OpenGL Vendor=Google (NVIDIA Corporation) Version.OpenGL ES 3.0 (4.5.0 NVIDIA 517.48) Renderer=Android Emulator OpenGL ES Translator (NVIDIA GeForce GTX 1070/PCIe/SSE2 GLSL=OpenGL ES GLSL ES 3.00`  
+⁶ Not yet tested on this platform, but have been informed the minimum version is `120`.
+⁷ Not yet tested on this platform
 
 † `300`, `310`, `320` all mandate the use of the `es` profile, and `core` (the default) and `compatibility` are not supported. According to the docs, `100` is actually the reference of an `es` version as well.  
 †† `321` is a control, it should display an "unsupported version" error on ALL computers. This is to ensure that the shader is not being reverted to a default version under the hood.

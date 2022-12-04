@@ -4,7 +4,7 @@ import flixel.system.FlxAssets.FlxShader;
 
 class NebulaShader extends FlxShader
 {
-	@:glVersion("321")
+	@:glVersion("460")
 	@:glFragmentSource("#pragma header
 // Galaxy shader
 // https://www.shadertoy.com/view/lty3Rt
@@ -264,7 +264,6 @@ void main() {
 
 	public function update(elapsed:Float):Void
 	{
-		trace('glVersion: ${this.glVersion}');
 		setTime(this.currentTime + elapsed);
 	}
 

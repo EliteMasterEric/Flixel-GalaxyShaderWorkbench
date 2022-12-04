@@ -10,10 +10,11 @@
 # GalaxyShader-002-UpdateOpenFL.exe
 ## Changes
 - **openfl**: git `MasterEric/openfl bugfix/shader-fixes`
+- **flixel**: git `MasterEric/flixel bugfix/glsl-300-shader`
 - Fixes and improvement to GraphicsShader used
-- Used default glVersion (currently `120` on desktop)
+- Used default glVersion (`100` on desktop)
 
 # GalaxyShader-003-ForceGLSL-100.exe
-- Used `#version 100`
+- Specifically specified `#version 100`
 Other similarly named ForceGLSL builds are simply using different GLSL versions.
 NOTE: `321` is a control, it should display an "unsupported version" error on ALL computers.
