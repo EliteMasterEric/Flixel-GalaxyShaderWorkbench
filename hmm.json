@@ -2,8 +2,10 @@
   "dependencies": [
     {
       "name": "flixel",
-      "type": "haxelib",
-      "version": null
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/HaxeFlixel/flixel/"
     },
     {
       "name": "hxcpp",

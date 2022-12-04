@@ -14,7 +14,7 @@
 
 	<set name="BUILD_DIR" value="export" />
 	<source path="source" />
-	<assets path="assets" />
+	<!--<assets path="assets" />-->
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
