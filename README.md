@@ -12,24 +12,24 @@ Galaxy shader via [ShaderToy](https://www.shadertoy.com/view/lty3Rt).
 
 GLSL Version | Windows (NVIDIA)¹ | Linux² | Firefox³ | Chrome⁴ | Android⁵ | MacOS⁶  | Windows (AMD)⁷
 ---|---|---|---|---|---|---|---
-100† | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ?
+100† | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅
 110 | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ?
 120 | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ?
 130 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ?
 140 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ?
 150 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ?
-300 es† | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ?
+300 es† | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅
 310 es† | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ | ?
 320 es† | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ?
-330 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
+330 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ✅
 400 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
 410 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
 420 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
 430 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
 440 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
 450 | ✅ | ? | ❌ | ❌ | ❌ | ❌ | ?
-460 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ?
-321†† | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ?
+460 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅
+321†† | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌
 
 ✅ - Supported and tested
 ❌ - Error: `client/version number not supported`
@@ -41,7 +41,7 @@ GLSL Version | Windows (NVIDIA)¹ | Linux² | Firefox³ | Chrome⁴ | Android⁵
 ⁴ Chrome v107.0.5304.123 `OpenGL Vendor=WebKit Version=WebGL 2.0 (OpenGL ES 3.0 Chromium) Renderer = WebKit WebGL GLSL=WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)`  
 ⁵ Android 11 (Pixel 4a) via Android Studio emulator `OpenGL Vendor=Google (NVIDIA Corporation) Version.OpenGL ES 3.0 (4.5.0 NVIDIA 517.48) Renderer=Android Emulator OpenGL ES Translator (NVIDIA GeForce GTX 1070/PCIe/SSE2 GLSL=OpenGL ES GLSL ES 3.00`  
 ⁶ Mac OS `OpenGL Vendor=Intel Inc. Version=2.1 INTEL-18.8.5 Renderer=Intel(R) HD Graphics 6000 GLSL=1.20` (thanks to @JonnycatMeow)
-⁷ Not yet tested on this platform
+⁷ Radeon RT 570 `Open GL Vendor=ATI Technologies Inc. Version=4.6.14761 Compatibility Profile Context 21.10.2 30.0.13025.5005 Renderer=Radeon RX 570 Series GLSL=4.60`
 
 † `300`, `310`, `320` all mandate the use of the `es` profile, and `core` (the default) and `compatibility` are not supported. According to the docs, `100` is actually the reference of an `es` version as well.  
 †† `321` is a control, it should display an "unsupported version" error on ALL computers. This is to ensure that the shader is not being reverted to a default version under the hood.

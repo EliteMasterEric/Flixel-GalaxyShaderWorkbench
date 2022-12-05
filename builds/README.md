@@ -18,3 +18,7 @@
 - Specifically specified `#version 100`
 Other similarly named ForceGLSL builds are simply using different GLSL versions.
 NOTE: `321` is a control, it should display an "unsupported version" error on ALL computers.
+
+# GalaxyShader-004-CrashHandler.exe
+- Copied crash handler from Forever Engine (Legacy)
+- Added code to write driver into to disk so you don't have to take a screenshot

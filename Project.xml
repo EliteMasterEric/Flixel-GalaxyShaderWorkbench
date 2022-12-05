@@ -27,4 +27,11 @@
 	<haxedef name="FLX_NO_TOUCH" if="desktop" />
 	<haxedef name="FLX_NO_DEBUG" unless="debug" />
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+
+  <!-- Crash handler from Forever Engine -->
+  <assets path="FE-CrashDialog.exe" type="template" if="windows release" />
+  
+	<!-- Always enable Null Object Reference check for crash dialog -->
+	<haxedef name="HXCPP_CHECK_POINTER" if="release" />
+	<haxedef name="HXCPP_STACK_LINE" if="release" />
 </project>

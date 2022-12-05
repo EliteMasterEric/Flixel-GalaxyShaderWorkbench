@@ -15,6 +15,8 @@ class PlayState extends FlxState
 	{
 		super.create();
 
+		writeDriverInfo();
+
 		backgroundImage = new FlxSprite(0, 0);
 
 		// Make the image solid pink, width and height of the screen.
@@ -38,6 +40,13 @@ class PlayState extends FlxState
 		// Add the image to the state.
 		add(backgroundImage);
 		add(shaderVersionText);
+	}
+
+	function writeDriverInfo()
+	{
+		#if sys
+		sys.io.File.saveContent('driverInfo.txt', FlxG.stage.context3D.driverInfo);
+		#end
 	}
 
 	public override function update(elapsed:Float)
