@@ -45,6 +45,37 @@ class PlayState extends FlxState
 	function writeDriverInfo()
 	{
 		#if sys
+		trace('System functions available.');
+
+		trace('FlxG: ${FlxG}');
+		if (FlxG == null)
+		{
+			trace('FlxG is null. Cannot log driver info.');
+			return;
+		}
+
+		trace('FlxG.stage: ${FlxG.stage}');
+		if (FlxG.stage == null)
+		{
+			trace('FlxG.stage is null. Cannot log driver info.');
+			return;
+		}
+
+		trace('FlxG.stage.context3D: ${FlxG.stage.context3D}');
+		if (FlxG.stage.context3D == null)
+		{
+			trace('FlxG.stage.context3D is null. Cannot log driver info.');
+			return;
+		}
+
+		trace('FlxG.stage.context3D.driverInfo: ${FlxG.stage.context3D.driverInfo}');
+		if (FlxG.stage.context3D.driverInfo == null)
+		{
+			trace('FlxG.stage.context3D.driverInfo is null. Cannot log driver info.');
+			return;
+		}
+
+		trace('Logging driver info...');
 		sys.io.File.saveContent('driverInfo.txt', FlxG.stage.context3D.driverInfo);
 		#end
 	}
@@ -56,7 +87,15 @@ class PlayState extends FlxState
 		// Update the shader.
 		nebulaShader.update(elapsed);
 
-		shaderVersionText.text = "Shader version: " + nebulaShader.glVersion + "\nDriver info: " + FlxG.stage.context3D.driverInfo;
+		shaderVersionText.text = "Shader version: " + nebulaShader.glVersion;
+		if (FlxG != null && FlxG.stage != null && FlxG.stage.context3D != null)
+		{
+			shaderVersionText.text += "\nDriver info: " + FlxG.stage.context3D.driverInfo;
+		}
+		else
+		{
+			shaderVersionText.text += "\nContext3D not available.";
+		}
 
 		#if !android
 		if (FlxG.keys.justPressed.SPACE)

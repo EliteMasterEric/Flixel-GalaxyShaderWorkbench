@@ -4,7 +4,7 @@ import flixel.system.FlxAssets.FlxShader;
 
 class NebulaShader extends FlxShader
 {
-	// @:glVersion("100")
+	@:glVersion("100")
 	@:glFragmentSource("#pragma header
 // Galaxy shader
 // https://www.shadertoy.com/view/lty3Rt
